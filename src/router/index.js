@@ -5,6 +5,8 @@ import EventDetails from '../views/event/DetailsView.vue'
 import EventRegister from '../views/event/RegisterView.vue'
 import EventEdit from '../views/event/EditView.vue'
 
+import SimpleFormView from '../views/forms/SimpleFormView.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -56,11 +58,16 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('@/views/AboutView.vue')
       // alias: '/about'
-    }
+    },
     // {
     //   path: '/about',
     //   redirect: { name: 'about' }
     // }
+    {
+      path: '/forms/simple',
+      name: 'simple',
+      component: SimpleFormView
+    }
   ]
 })
 
