@@ -36,10 +36,15 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  /* color: #42b983; */
+  color: darkgreen;
 }
 
 h2 {
   font-size: 20px;
+}
+
+.errorMessage {
+  color: #2c3e50;
 }
 </style>
